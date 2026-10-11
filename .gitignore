@@ -16,7 +16,8 @@ out
 # gradle
 build
 .gradle
-gradle/wrapper/gradle-wrapper.jar
+# NOTE: wrapper jar intentionally TRACKED (CI needs it)
+javac.*.args
 
 # other
 /runtime/
