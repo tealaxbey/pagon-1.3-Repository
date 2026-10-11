@@ -1,0 +1,100 @@
+{
+  "targets": {
+    "swap": {}
+  },
+  "passes": [
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "pagon:post/pagon_outline",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:entity_outline"
+        }
+      ],
+      "output": "swap",
+      "uniforms": {
+        "ShaderConfig": [
+          {
+            "name": "ShaderTime",
+            "type": "float",
+            "value": 0.0
+          },
+          {
+            "name": "Resolution",
+            "type": "vec2",
+            "value": [1.0, 1.0]
+          },
+          {
+            "name": "Width",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "GlowInside",
+            "type": "int",
+            "value": 0
+          },
+          {
+            "name": "GlowQuality",
+            "type": "int",
+            "value": 2
+          },
+          {
+            "name": "FillMode",
+            "type": "int",
+            "value": 0
+          },
+          {
+            "name": "GlowMultiplier",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "FillAlpha",
+            "type": "float",
+            "value": 0.5
+          },
+          {
+            "name": "OutlineAlpha",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "RainbowScale",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "RainbowSpeed",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "RainbowBrightness",
+            "type": "float",
+            "value": 1.0
+          },
+          {
+            "name": "RainbowContrast",
+            "type": "float",
+            "value": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "vertex_shader": "minecraft:core/screenquad",
+      "fragment_shader": "pagon:post/copy",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap"
+        }
+      ],
+      "output": "minecraft:entity_outline"
+    }
+  ]
+}
+
+

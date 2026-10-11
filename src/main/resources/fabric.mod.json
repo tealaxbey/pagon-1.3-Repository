@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pagon",
+  "version": "${version}",
+  "name": "Pagon",
+  "description": "pagon client",
+  "authors": [
+    "ItsMahir"
+  ],
+  "contact": {
+    "repo": ""
+  },
+  "license": "MIT",
+  "environment": "client",
+  "accessWidener": "pagon.accesswidener",
+  "entrypoints": {
+    "client": [
+      "org.pagon.Pagon"
+    ],
+    "main": [
+      "org.pagon.Pagon"
+    ]
+  },
+  "mixins": [
+    "pagon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
