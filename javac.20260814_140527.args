@@ -1,0 +1,4 @@
+-cp
+/home/mahir/.gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api/0.104.0+1.21.1/76185fd482e268e903a64b27dd9774662ebd840c/fabric-api-0.104.0+1.21.1-sources.jar:/home/mahir/.gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api/0.104.0+1.21.1/13ddb81215c59899df00a7a98872c3aea53aca7/fabric-api-0.104.0+1.21.1.jar:/home/mahir/.gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api/0.155.2+26.1.2/5fe5204ccc96a17340570db66a5b4127b8176246/fabric-api-0.155.2+26.1.2.jar:/home/mahir/.gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api/0.141.1+1.21.11/7f51d854b55c8b29fb4dc0d666e550015c742b69/fabric-api-0.141.1+1.21.11.jar:/home/mahir/.gradle/caches/modules-2/files-2.1/net.fabricmc.fabric-api/fabric-api/0.141.1+1.21.11/205fd5c891f1df909c70ffd631d3b31656d4c52c/fabric-api-0.141.1+1.21.11-sources.jar::src/main/java
+-Xlint:none
+src/main/java/fclproject/legacy/features/modules/client/DiscordRpcModule.java
